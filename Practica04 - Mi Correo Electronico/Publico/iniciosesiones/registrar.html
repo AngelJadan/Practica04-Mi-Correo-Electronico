@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>Inicio administrador</title>
+        <meta charset="UTF-8">
         <link href="../index.html">
-        <link href="../config_inicio_secion_php.php/estiloscss/registrar.css">
+        <link href="/Publico/config_inicio_secion_php.php/estiloscss/registrar.css">
     </head>
     <body>
         <div>
@@ -11,33 +12,111 @@
                 <a href="../index.html">Inicio</a>
             </section>
         </div>
+        <div>
+            <h1>
+                Registro de nuevo usuario
+            </h1>
+        </div>
         <form>
-            <label for="nombre">Nombres</label>
-            <input type="text" name="nombre" placeholder="Ingrese sus nombres" required/>
-            <br>
-            <label for="apellido">Apellidos</label>
-            <input type="text" name="apellidos" placeholder="Ingrese sus apellidos" required/>
-            <br>
-            <label for="pais">País</label>
-            <select name="paises">
-                <option value="1">Ecuador</option>
-                <option value="2">Perú</option>
-                <option value="3">Colombia</option>
-                <option value="4">Mexico</option>
-            </select>
-            <br>
-            <label for="ciudad">Ciudad</label>
-            <select name="ciudades">
-                    <option value="1">Cuenca</option>
-                    <option value="2">Azogues</option>
-                    <option value="3">Gualaceo</option>
-                </select>
-            <br>
-            <label for="telefono">Telefono</label>
-            <input type="number" name="txttelefono" placeholder="Ingrese un telefono" required/>
-            <br>
-            <label for="nacimiento">Fecha de naciemiento</label>
-            <input type="date" value="" name="txtnaciemiento" required/>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombres</label>
+                    </td>
+                    <td>
+                        <input type="text" id="nombre" name="nombre" value="" placeholder="Ingrese sus nombre" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="apellido">Apellidos</label>
+                    </td>
+                    <td>
+                        <input type="text" id="apellido" name="apellido" value="" placeholder="Ingrese sus apellidos" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pais">País</label>
+                    </td>
+                    <td>
+                        <select>
+                                <option>Ecuador</option>
+                                <option>Colombia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ciudad">Ciudad</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="cuenca">Cuenca</option>
+                            <option value="gualaceo">Gualaceo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="telefono">Telefono</label>
+                    </td>
+                    <td>
+                        <input type="text" name="telefono" value="" placeholder="Numero de telefono" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nacimiento">Fecha de <br> Naciemiento</label>
+                    </td>
+                    <td>
+                        <input id="fechan" type="date" value="" name="fechan" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tipo">Tipo de usuario</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="admi">Administrador</option>
+                            <option value="user">Usuario</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="contrasena">Contraseña</label>
+                    </td>
+                    <td>
+                        <input id="txtcontrasena" type="password" name="txtcontrasena" placeholder="Ingrese una contraseña" required/>
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                                <label>Repetir Contraseña</label>
+                            </td>
+                            <td>
+                                <input id="contrasena2" type="password" name="contrasena2" placeholder="Repita la contraseña" required/>
+                            </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="palabra">Palabra clave</label>
+                    </td>
+                    <td>
+                        <input id="palabra" type="palabra" name="palabra" placeholder="Ingrese una palabra" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Imagen de perfil</label>
+                    </td>
+                    <td>
+                        <input type="file" size="60" value="file1"/>
+                    </td>
+                </tr>
+            </table>
         </form>
         <div>
             <input type="submit" id="crear" value="Crear"/>

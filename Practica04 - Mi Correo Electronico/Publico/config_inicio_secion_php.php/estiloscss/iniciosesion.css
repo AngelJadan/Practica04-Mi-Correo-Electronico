@@ -1,12 +1,18 @@
 body{
     background-color: aqua;
 }
+#marco1{
+    float: left;
+}
+#marco2{
+    float: left;
+}
 .textos{
     font-family: sans-serif; 
     color: black;
     margin: 4px;
-    background:wheat;
-    margin: 2px ;border :solid slategray;
+    background:aqua;
+    margin: 2px ;border :solid teal;
     text-align: center;
 }
 input{
