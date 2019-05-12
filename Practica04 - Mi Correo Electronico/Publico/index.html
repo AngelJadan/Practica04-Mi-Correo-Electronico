@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript">
-            alert("Script")
-        </script>
-    </head>
+        <title>
+            Inicio
+        </title>
+        <meta charset="UTF-8">
 
+    </head>
+    <body>
+        <form id="iniciosecion" method="POST" action="/Publico/config_inicio_secion_php.php">
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo" name="correo" value="" placeholder="Ingrese usuario"/>
+
+            <br>
+
+            <label for="password">Contraseña</label>
+            <input type="contrasena" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña"/>
+            
+            <br>
+
+            <input type="submit" id="login" name="login" value="Iniciar Sesion"/>
+            <input type="submit" id="registro" name="registro" value="Registrarse"/>
+        </form>
+    </body>
 </html>
