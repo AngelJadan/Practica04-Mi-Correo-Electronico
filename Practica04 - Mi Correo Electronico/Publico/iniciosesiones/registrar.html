@@ -2,8 +2,15 @@
 <html>
     <head>
         <title>Inicio administrador</title>
+        <link href="../index.html">
+        <link href="../config_inicio_secion_php.php/estiloscss/registrar.css">
     </head>
     <body>
+        <div>
+            <section>
+                <a href="../index.html">Inicio</a>
+            </section>
+        </div>
         <form>
             <label for="nombre">Nombres</label>
             <input type="text" name="nombre" placeholder="Ingrese sus nombres" required/>
@@ -32,5 +39,9 @@
             <label for="nacimiento">Fecha de naciemiento</label>
             <input type="date" value="" name="txtnaciemiento" required/>
         </form>
+        <div>
+            <input type="submit" id="crear" value="Crear"/>
+            <input type="submit" id="cancelar" value="Cancelar"/>
+        </div>
     </body>
 </html>

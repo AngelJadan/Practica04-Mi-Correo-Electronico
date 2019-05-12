@@ -5,9 +5,11 @@
             Inicio
         </title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="./config_inicio_secion_php.php/estiloscss.css/iniciosesion.css" type="text/css">
+        <link rel="stylesheet" href="./config_inicio_secion_php.php/estiloscss/iniciosesion.css" type="text/css">
+        <link rel="stylesheet" href="./iniciosesiones/registrar.html" type="txt/html">
     </head>
     <body>
+        <h1>Sistema de control de correo electronico</h1>
         <form id="iniciosecion" method="POST" action="/Publico/config_inicio_secion_php.php">
             <label id="txtcorreo" class="textos" for="correo">Correo Electronico</label>
             <input type="email" id="correo" name="correo" value="" placeholder="Ingrese usuario" required/>
@@ -16,7 +18,9 @@
             <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña" required/>
             <br>
             <input class="botones" type="submit" id="login" name="login" value="Iniciar Sesion"/>
-            <input class="botones" type="submit" id="registro" name="registro" value="Registrarse" formaction="./iniciosesiones/registrar.html"/>
         </form>
+        <div id="reg">
+            <a id="registro" href="./iniciosesiones/registrar.html">Registrarse</a>
+        </div>
     </body>
 </html>
