@@ -1,0 +1,19 @@
+.textos{
+    font-family: sans-serif; 
+    color: black;
+    margin: 4px;
+    background:wheat;
+    margin: 2px ;border :solid slategray;
+    text-align: center;
+}
+input{
+    margin: 5px;
+}
+.botones{
+    font-family: sans-serif; 
+    color: black;
+    margin: 4%;
+    background: teal;
+    margin: 2px ;border :solid black;
+    text-align: center;
+}
